@@ -162,7 +162,6 @@ footer {
 // ----------------------------------------
 
 .navigation {
-  display: flex;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
@@ -172,6 +171,7 @@ footer {
   font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
+  display: none;
 }
 
 // ----------------------------------------
@@ -345,4 +345,55 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media (min-width: 1200px) {
+  .branding-title {
+    text-align: left;
+    font-size: 50px;
+  }
+  .branding-tagline {
+    text-align: left;
+  }
+  .burger {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .show-date,
+  .show-origin {
+    font-size: 18px;
+  }
+  .show-title {
+    font-size: 34px;
+  }
+  .quote-content {
+    font-size: 34px;
+  }
+  .quote-source {
+    font-size: 18px;
+  }
+  .section-title {
+    font-size: 50px;
+  }
+  .article-summary,
+  .article-title {
+    font-size: 18px;
+  }
+  .opportunities-title {
+    font-size: 50px;
+  }
+  .opportunity {
+    font-size: 34px;
+  }
+  .footer-title {
+    font-size: 100px;
+  }
+  .footer-contact {
+    text-align: left;
+  }
+  .footer-social {
+    justify-content: flex-end;
+  }
 }
